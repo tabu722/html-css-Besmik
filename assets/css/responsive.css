@@ -1,0 +1,273 @@
+/* PC */
+@media screen and (min-width: 1200px) {
+    .menu-header {
+        display: none;
+    }
+
+    .menu-logo {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet/Mobile */
+@media screen and (max-width: 1199.8px) {
+    .header .content {
+        position: relative;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .action {
+        margin-left: auto;
+    }
+
+    .menu-logo {
+        width: 24px;
+        height: 24px;
+        color: var(--primary-color);
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.25s;
+    }
+
+    .menu-drawer {
+        padding: 50px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 3;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .menu-checkbox:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .menu-nav {
+        margin-top: 50px;
+    }
+
+    .menu-nav a {
+        display: block;
+        padding: 20px 0;
+        color: #2f3a3b;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .logo-footer {
+        position: static;
+        transform: translate(0);
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero-info .title {
+        width: 100%;
+    }
+
+    .hero-img .image {
+        width: 100%;
+    }
+
+    .features .body {
+        width: 90%;
+    }
+
+    .course .row-body {
+        width: 100%;
+    }
+
+    .course .row-body .box {
+        width: 292px;
+        transform: translateX(0);
+    }
+
+    .complain .image-section {
+        width: 50%;
+    }
+
+    .complain .image-section .img-2,
+    .complain .image-section .img-6 {
+        display: none;
+    }
+
+    .complain .image-section .img-3 {
+        width: 220px;
+    }
+
+    .footer-row {
+        margin-top: 40px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .action {
+        display: none;
+    }
+
+    .separate {
+        width: 50%;
+        border-top: 1.5px solid #ccc;
+    }
+
+    .hero-info {
+        padding: 50px 0 40px;
+    }
+
+    .hero-info .title {
+        width: 50%;
+        font-size: 5.2rem;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-info .desc {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .features {
+        margin-top: 90px;
+    }
+
+    .features .content .sub-title {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .features .content .desc {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .course .content .sub-title {
+        font-size: 3rem;
+    }
+
+    .course .content .row-top {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .course .content .row-top .desc {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .course .body {
+        width: 100%;
+    }
+
+    .course .row-body .image {
+        width: 100%;
+    }
+
+    .course .row-body .box {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .number-courses {
+        width: 100%;
+    }
+
+    .number-courses .number {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 0 47px;
+    }
+
+    .number-courses .number .section {
+        padding: 20px 0;
+    }
+
+    .complain .content {
+        flex-wrap: wrap;
+    }
+
+    .complain .desc {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .complain .label,
+    .sub-label {
+        font-size: 1.2rem;
+    }
+
+    .complain .image-section {
+        display: none;
+    }
+
+    .form .content {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .form .heading .tile {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .form .heading .desc {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .footer .content {
+        display: block;
+    }
+
+    .footer .copy {
+        width: 80%;
+    }
+
+    .footer .copy .copyright {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+}
