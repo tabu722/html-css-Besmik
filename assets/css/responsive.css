@@ -130,9 +130,45 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
     .show-on-mobile {
         display: none;
+    }
+
+    .course .row-body .box {
+        width: 217px;
+    }
+
+    .number-courses {
+        width: 100%;
+    }
+
+    .complain .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 90px;
+    }
+
+    .complain .image-section {
+        orphans: 2;
+    }
+
+    .form .content .btn-form {
+        margin-right: 0;
+    }
+
+    .footer .content {
+        gap: 30px;
+    }
+
+    .footer-item a {
+        white-space: nowrap;
+    }
+
+    .hero-img {
+        margin-left: 40px;
     }
 }
 
@@ -162,7 +198,6 @@
 
     .hero-info .desc {
         font-size: 1.5rem;
-        width: 100%;
     }
 
     .features {
@@ -170,12 +205,12 @@
     }
 
     .features .content .sub-title {
-        width: 100%;
+        width: 90%;
         font-size: 3rem;
     }
 
     .features .content .desc {
-        width: 100%;
+        width: 90%;
         font-size: 1.5rem;
     }
 
@@ -186,6 +221,7 @@
     .course .content .row-top {
         flex-wrap: wrap;
         row-gap: 20px;
+        width: 90%;
     }
 
     .course .content .row-top .desc {
@@ -202,12 +238,12 @@
     }
 
     .course .row-body .image {
-        width: 100%;
+        width: 90%;
     }
 
     .course .row-body .box {
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-56%);
     }
 
     .number-courses {
@@ -216,7 +252,7 @@
 
     .number-courses .number {
         flex-wrap: wrap;
-        width: 100%;
+        width: 90%;
         justify-content: center;
         gap: 0 47px;
     }
@@ -230,7 +266,7 @@
     }
 
     .complain .desc {
-        width: 100%;
+        width: 90%;
         font-size: 2rem;
     }
 
@@ -269,5 +305,17 @@
     .footer .copy .copyright {
         font-size: 1.5rem;
         line-height: 1.5;
+    }
+
+    .course .row-body {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .content .tile {
+        width: 90%;
+    }
+
+    .footer-item li {
+        width: 90%;
     }
 }

@@ -439,6 +439,8 @@ a {
 
 .course .row-body {
     margin-top: 79px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .course .row-body .image {
